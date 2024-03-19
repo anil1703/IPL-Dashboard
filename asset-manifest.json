@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/IPL-Dashboard/static/css/main.4a9b0c30.chunk.css",
+    "main.js": "/IPL-Dashboard/static/js/main.97cb0ec2.chunk.js",
+    "main.js.map": "/IPL-Dashboard/static/js/main.97cb0ec2.chunk.js.map",
+    "runtime-main.js": "/IPL-Dashboard/static/js/runtime-main.e66eec64.js",
+    "runtime-main.js.map": "/IPL-Dashboard/static/js/runtime-main.e66eec64.js.map",
+    "static/css/2.91ac4a78.chunk.css": "/IPL-Dashboard/static/css/2.91ac4a78.chunk.css",
+    "static/js/2.283745a3.chunk.js": "/IPL-Dashboard/static/js/2.283745a3.chunk.js",
+    "static/js/2.283745a3.chunk.js.map": "/IPL-Dashboard/static/js/2.283745a3.chunk.js.map",
+    "index.html": "/IPL-Dashboard/index.html",
+    "static/css/2.91ac4a78.chunk.css.map": "/IPL-Dashboard/static/css/2.91ac4a78.chunk.css.map",
+    "static/css/main.4a9b0c30.chunk.css.map": "/IPL-Dashboard/static/css/main.4a9b0c30.chunk.css.map",
+    "static/js/2.283745a3.chunk.js.LICENSE.txt": "/IPL-Dashboard/static/js/2.283745a3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e66eec64.js",
+    "static/css/2.91ac4a78.chunk.css",
+    "static/js/2.283745a3.chunk.js",
+    "static/css/main.4a9b0c30.chunk.css",
+    "static/js/main.97cb0ec2.chunk.js"
+  ]
+}
