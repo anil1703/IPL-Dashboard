@@ -8,7 +8,10 @@ const App = () => (
   <div>
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/team-matches/:id" component={TeamMatches} />
+      <Route
+        path={`${process.env.PUBLIC_URL}/team-matches/:id`}
+        component={TeamMatches}
+      />
       <Route component={NotFound} />
     </Switch>
   </div>

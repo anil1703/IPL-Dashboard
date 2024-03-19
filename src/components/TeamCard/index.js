@@ -6,7 +6,10 @@ const TeamCard = props => {
   const {data} = props
   const {name, id, teamImageUrl} = data
   return (
-    <Link className="linkStyle" to={`/team-matches/${id}`}>
+    <Link
+      className="linkStyle"
+      to={`${process.env.PUBLIC_URL}/team-matches/${id}`}
+    >
       <li className="listo">
         <img src={teamImageUrl} alt={name} className="card" />
         <p className="home-para">{name}</p>

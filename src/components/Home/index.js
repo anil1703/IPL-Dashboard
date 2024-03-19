@@ -8,9 +8,11 @@ import './index.css'
 
 class Home extends Component {
   state = {teamCards: [], isLoading: true}
+
   componentDidMount() {
     this.gettingTeamCards()
   }
+
   gettingTeamCards = async () => {
     const response = await fetch('https://apis.ccbp.in/ipl')
     const data = await response.json()
@@ -25,6 +27,7 @@ class Home extends Component {
       isLoading: false,
     })
   }
+
   render() {
     const {teamCards, isLoading} = this.state
     return (
@@ -38,7 +41,7 @@ class Home extends Component {
           <h1 className="home-head">IPL Dashboard</h1>
         </div>
         {isLoading ? (
-          <div testid="loader">
+          <div>
             <Loader type="Oval" color="#ffffff" height={50} width={50} />
           </div>
         ) : (

@@ -9,9 +9,11 @@ import './index.css'
 
 class TeamMatches extends Component {
   state = {updatedData: [], isLoading: true, id: ''}
+
   componentDidMount() {
     this.gettingDetails()
   }
+
   gettingDetails = async () => {
     const {match} = this.props
     const {params} = match
@@ -20,10 +22,9 @@ class TeamMatches extends Component {
 
     const response = await fetch(`https://apis.ccbp.in/ipl/${id}`)
     const data = await response.json()
-    const {latest_match_details, recent_matches, team_banner_url} = data
-    const latestMatchDetails = [latest_match_details]
-    const recentMatches = recent_matches
-    const teamBannerUrl = team_banner_url
+    const latestMatchDetails = [data.latest_match_details]
+    const recentMatches = data.recent_matches
+    const teamBannerUrl = data.team_banner_url
     const updatingLatestMatchDetails = latestMatchDetails.map(eachdet => ({
       umpires: eachdet.umpires,
       result: eachdet.result,
@@ -60,6 +61,7 @@ class TeamMatches extends Component {
       isLoading: false,
     })
   }
+
   getRecentMatches = () => {
     const {updatedData} = this.state
     const recentList = updatedData[1]
@@ -71,6 +73,7 @@ class TeamMatches extends Component {
       </ul>
     )
   }
+
   gettingLatesMatch = () => {
     const {updatedData} = this.state
     const latestMatch = updatedData[0]
@@ -87,6 +90,7 @@ class TeamMatches extends Component {
       </div>
     )
   }
+
   getAllDataImages = () => {
     const {updatedData} = this.state
     return (
@@ -96,13 +100,14 @@ class TeamMatches extends Component {
       </div>
     )
   }
+
   render() {
-    const {id, isLoading, updatedData} = this.state
+    const {id, isLoading} = this.state
     console.log(isLoading)
     return (
       <div className={`TeamMatchesDiv ${id.id}`}>
         {isLoading ? (
-          <div testid="loader">
+          <div>
             <Loader type="Oval" color="#ffffff" height={50} width={50} />
           </div>
         ) : (

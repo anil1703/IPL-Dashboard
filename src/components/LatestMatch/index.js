@@ -7,14 +7,13 @@ const LatestMatch = props => {
     umpires,
     result,
     manOfTheMatch,
-    id,
+
     date,
     venue,
     competingTeam,
     competingTeamLogo,
     firstInnings,
     secondInnings,
-    matchStatus,
   } = data
   console.log(data)
   return (
