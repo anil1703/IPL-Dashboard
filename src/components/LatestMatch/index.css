@@ -1,0 +1,29 @@
+/* Write your CSS here */
+.latestLogo {
+  height: 180px;
+}
+.la-para {
+  margin-top: 10px;
+}
+.three {
+  text-align: right;
+}
+.small-screen {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .one {
+    align-self: flex-start;
+  }
+  .three {
+    align-self: flex-end;
+  }
+  .latestLogo{
+    height: 100px;
+  }
+  .two{
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+}

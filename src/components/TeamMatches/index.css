@@ -1,0 +1,67 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bree Serif;
+  box-sizing: border-box;
+}
+.TeamMatchesDiv {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.latest {
+  color: white;
+}
+.RCB {
+  background-image: linear-gradient(to top, #1e293b, #a4261d);
+}
+.ulDiv {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e293b;
+  padding: 20px;
+  align-items: center;
+  border-radius: 8px;
+}
+.banner {
+  width: 100%;
+}
+.ulTwo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.KKR {
+  background-image: linear-gradient(to bottom, #5755a7, #1e293b);
+}
+.KXP {
+  background-image: linear-gradient(to bottom, #d91c1f, #1e293b);
+}
+.CSK {
+  background-image: linear-gradient(to bottom, #f7db00, #1e293b);
+}
+.RR {
+  background-image: linear-gradient(to bottom, #ffffff33, #1e293b);
+}
+.MI {
+  background-image: linear-gradient(to bottom, #13418b, #1e293b);
+}
+.SH {
+  background-image: linear-gradient(to bottom, #f26d22, #1e293b);
+}
+.DC {
+  background-image: linear-gradient(to bottom, #4f5db0, #1e293b);
+}
+@media (max-width:768px){
+  .ulDiv {
+    flex-direction: column;
+  }
+}

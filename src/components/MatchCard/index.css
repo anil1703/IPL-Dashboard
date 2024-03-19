@@ -1,0 +1,37 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bree serif;
+  box-sizing: border-box;
+}
+
+.re-listo {
+  background-color: #1e293b;
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.re-img {
+  height: 100px;
+}
+.re-head {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.red {
+  color: #e31a1a;
+  margin-top: 20px;
+}
+.green {
+  color: #18ed66;
+  margin-top: 20px;
+}

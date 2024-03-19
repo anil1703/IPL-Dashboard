@@ -1,0 +1,47 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bree Serif;
+}
+.home {
+  height: 100vh;
+  background-image: url(https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleDiv {
+  display: flex;
+  color: white;
+  font-size: 30px;
+  gap: 12px;
+}
+.logo {
+  height: 80px;
+}
+.ulStyle {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 13px;
+  column-gap: 20px;
+  width: 700px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .home-head {
+    font-size: 30px;
+  }
+  .logo {
+    height: 50px;
+  }
+  .ulStyle {
+    width: 350px;
+  }
+}

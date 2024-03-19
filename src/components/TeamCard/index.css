@@ -1,0 +1,35 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.listo {
+  display: flex;
+  gap: 10px;
+  color: white;
+  border: 1px solid #ffffff;
+  background-color: #ffffff33;
+  border-radius: 8px;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+}
+.card {
+  height: 90px;
+}
+.linkStyle {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .home-para {
+    font-size: 14px;
+  }
+  .listo {
+    width: 160px;
+    height: 80px;
+  }
+  .card {
+    height: 30px;
+  }
+}
